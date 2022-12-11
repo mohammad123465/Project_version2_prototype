@@ -1,0 +1,4 @@
+C:\Users\Albasheq\Documents\Visual Studio 2010\Projects\WebApplication2 - Copy1\WebApplication2\bin\WebApplication2.dll
+C:\Users\Albasheq\Documents\Visual Studio 2010\Projects\WebApplication2 - Copy1\WebApplication2\bin\WebApplication2.pdb
+C:\Users\Albasheq\Documents\Visual Studio 2010\Projects\WebApplication2 - Copy1\WebApplication2\obj\Debug\WebApplication2.dll
+C:\Users\Albasheq\Documents\Visual Studio 2010\Projects\WebApplication2 - Copy1\WebApplication2\obj\Debug\WebApplication2.pdb

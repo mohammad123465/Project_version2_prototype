@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DB_PROJECT1" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\DB_PROJECT1.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.category_tb" Member="category_tbs">
+    <Type Name="category_tb">
+      <Column Name="ID_CATEGORY" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NAME_CATEGORY" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PUBLISH_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="category_tb_types_tb" Member="types_tbs" ThisKey="ID_CATEGORY" OtherKey="ID_CATEGORE_TYPE" Type="types_tb" />
+    </Type>
+  </Table>
+  <Table Name="dbo.product_tb" Member="product_tbs">
+    <Type Name="product_tb">
+      <Column Name="ID_PRODUCT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NAME_PRODUCT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PUBLISH_DATE_P" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IS_VALIBLE" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="product_tb_types_tb" Member="types_tbs" ThisKey="ID_PRODUCT" OtherKey="ID_PRODUCT_TYPE" Type="types_tb" />
+    </Type>
+  </Table>
+  <Table Name="dbo.types_tb" Member="types_tbs">
+    <Type Name="types_tb">
+      <Column Name="ID_CATEGORE_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_PRODUCT_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TYPES_PRO" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ID_TYPE_CAT_PRO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="category_tb_types_tb" Member="category_tb" ThisKey="ID_CATEGORE_TYPE" OtherKey="ID_CATEGORY" Type="category_tb" IsForeignKey="true" />
+      <Association Name="product_tb_types_tb" Member="product_tb" ThisKey="ID_PRODUCT_TYPE" OtherKey="ID_PRODUCT" Type="product_tb" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.users_tb" Member="users_tbs">
+    <Type Name="users_tb">
+      <Column Name="FULL_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PASSWORD" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AUTHORISE" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

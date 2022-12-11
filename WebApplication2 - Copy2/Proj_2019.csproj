@@ -1,0 +1,149 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{AED86C46-55DC-4EDF-96F8-3ABAF4B83546}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Proj_2019</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WebApplication2\DataClasses1.dbml" />
+    <None Include="WebApplication2\DataClasses1.dbml.layout" />
+    <None Include="WebApplication2\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WebApplication2\obj\Debug\Package\web_version2.deploy.cmd" />
+    <None Include="WebApplication2\obj\Debug\Package\web_version2.zip" />
+    <None Include="WebApplication2\Web.config" />
+    <None Include="WebApplication2\Web.Debug.config" />
+    <None Include="WebApplication2\Web.Release.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WebApplication2\DataClasses1.designer.cs" />
+    <Compile Include="WebApplication2\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_project\categore_class.cs" />
+    <Compile Include="WebApplication2\Pages_project\db_control.cs" />
+    <Compile Include="WebApplication2\Pages_project\product_class.cs" />
+    <Compile Include="WebApplication2\Pages_pro\categore_class.cs" />
+    <Compile Include="WebApplication2\Pages_pro\db_control.cs" />
+    <Compile Include="WebApplication2\Pages_pro\Inter_categore.cs" />
+    <Compile Include="WebApplication2\Pages_pro\Inter_connect_database.cs" />
+    <Compile Include="WebApplication2\Pages_pro\Inter_product.cs" />
+    <Compile Include="WebApplication2\Pages_pro\Inter_type.cs" />
+    <Compile Include="WebApplication2\Pages_pro\Inter_user.cs" />
+    <Compile Include="WebApplication2\Pages_pro\Linq_class_db.aspx.cs">
+      <DependentUpon>Linq_class_db.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_pro\Linq_class_db.aspx.designer.cs">
+      <DependentUpon>Linq_class_db.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_pro\product_class.cs" />
+    <Compile Include="WebApplication2\Pages_pro\type_class.cs" />
+    <Compile Include="WebApplication2\Pages_pro\users_class.cs" />
+    <Compile Include="WebApplication2\Pages_Show\CategorePage.aspx.cs">
+      <DependentUpon>CategorePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\CategorePage.aspx.designer.cs">
+      <DependentUpon>CategorePage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\DashboardAdmin.aspx.cs">
+      <DependentUpon>DashboardAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\DashboardAdmin.aspx.designer.cs">
+      <DependentUpon>DashboardAdmin.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\ProductPage.aspx.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\ProductPage.aspx.designer.cs">
+      <DependentUpon>ProductPage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\Type_cate_prod.aspx.cs">
+      <DependentUpon>Type_cate_prod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\Type_cate_prod.aspx.designer.cs">
+      <DependentUpon>Type_cate_prod.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Pages_Show\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebApplication2\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebApplication2\App_Data\DB_PROJECT1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WebApplication2\App_Data\DB_PROJECT1_log.ldf">
+      <DependentUpon>DB_PROJECT1.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WebApplication2\bin\WebApplication2.dll" />
+    <Content Include="WebApplication2\bin\WebApplication2.pdb" />
+    <Content Include="WebApplication2\Global.asax" />
+    <Content Include="WebApplication2\obj\Debug\Package\web_version2.deploy-readme.txt" />
+    <Content Include="WebApplication2\obj\Debug\Package\web_version2.SetParameters.xml" />
+    <Content Include="WebApplication2\obj\Debug\Package\web_version2.SourceManifest.xml" />
+    <Content Include="WebApplication2\obj\Debug\TempPE\DataClasses1.designer.cs.dll" />
+    <Content Include="WebApplication2\obj\Debug\WebApplication2.csproj.FileListAbsolute.txt" />
+    <Content Include="WebApplication2\obj\Debug\WebApplication2.dll" />
+    <Content Include="WebApplication2\obj\Debug\WebApplication2.pdb" />
+    <Content Include="WebApplication2\obj\Debug\web_version2.csproj.FileListAbsolute.txt" />
+    <Content Include="WebApplication2\Pages_pro\Linq_class_db.aspx" />
+    <Content Include="WebApplication2\Pages_Show\CategorePage.aspx" />
+    <Content Include="WebApplication2\Pages_Show\DashboardAdmin.aspx" />
+    <Content Include="WebApplication2\Pages_Show\Login.aspx" />
+    <Content Include="WebApplication2\Pages_Show\ProductPage.aspx" />
+    <Content Include="WebApplication2\Pages_Show\Type_cate_prod.aspx" />
+    <Content Include="WebApplication2\Pages_Show\Users.aspx" />
+    <Content Include="WebApplication2\WebApplication2.csproj" />
+    <Content Include="WebApplication2\WebApplication2.csproj.user" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

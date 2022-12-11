@@ -1,0 +1,2 @@
+C:\Users\Albasheq\Documents\Visual Studio 2010\Projects\WebApplication2 - Copy2\obj\x86\Debug\Proj_2019.csprojAssemblyReference.cache
+C:\Users\Albasheq\Documents\Visual Studio 2010\Projects\WebApplication2 - Copy2\obj\x86\Debug\Proj_2019.csproj.CoreCompileInputs.cache
